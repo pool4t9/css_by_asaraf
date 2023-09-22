@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla:wght@400;500&display=swap");
+:root {
+  --primary-color: #130f49;
+  --secondry-color: #ffbd7a;
+  --bg-color: #effbf8;
+  --third-color: #a5a6ff;
+  --link-color: #55527c;
+  --font-inter: "Inter", sans-serif;
+  --font-karla: "Karla", sans-serif;
+  --font-kristi: "Kristi", cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* background: black; */
+}
+
+.left-root {
+  max-width: 350px;
+  width: 100%;
+  background-color: var(--bg-color);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid rgba(85, 82, 124, 0.1);
+}
+
+.right-root {
+  width: calc(100% - 350px);
+  background-color: var(--primary-color);
+  height: 100vh;
+  margin-left: 350px;
+  color: #000;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-info .profile-image {
+  border-radius: 100%;
+  border: 1px solid var(--third-color);
+  height: 77px;
+  width: 77px;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.options .un-ordered-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.list-item {
+  padding: 12px;
+  font-family: var(--font-karla);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--third-color);
+}
